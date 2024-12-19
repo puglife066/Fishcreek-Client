@@ -1,0 +1,177 @@
+﻿body {
+    background-color: #FFFFFF;
+    color: #003366;
+    background-image: linear-gradient(to bottom right, #e0f7fa, #0277bd);
+    /* Light blue to deep blue */
+    color: #003366;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    color: #F0F0F0;
+    height: 100px;
+    background-image: url(fishcreeklogo.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #003366;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*h1 {
+    background-color: #003366;
+    color: #AEC3E3;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 200%;
+    text-indent: 1em;
+}*/
+
+h2 {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px #777;
+}
+
+/*Created h3 specifically for help/contact page indent, not needed anymore*/
+
+h3 {
+    text-indent: 2em;
+}
+
+/*Assign 3 - I centered the nav images instead of having them off to the left as in the figures*/
+/*I believe Task 5 requests this*/
+nav {
+    font-weight: bold;
+    font-size: 1.25em;
+    word-spacing: 1em;
+    text-align: center;
+    background-color: #5280C5;
+    padding: 0.50em;
+}
+
+    nav a {
+        text-decoration: none;
+        word-spacing: normal;
+    }
+
+/* I don't know how to use span specifically to target nav */
+
+dt {
+    color: #5280C5;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 5px;
+}
+
+.serviceList {
+    color: #5280C5;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+dd {
+    margin-bottom: 25px;
+}
+
+.category {
+    font-weight: bold;
+    color: #5380C5;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 10px;
+}
+
+footer {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    padding: 0.50em;
+    background-color: #AEC3E3;
+}
+
+/*For styling bottom access*/
+
+    #footNav {
+        background-color: #F0F0F0;
+        font-size: 110%;
+    }
+
+/*I don't know where to use the .clientname class, so I created but didn't use*/
+
+.clientname {
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/*For all pages, wrapper needs to be a class, not an id*/
+
+.wrapper {
+    min-width: 700px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F0F0F0;
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+table {
+    margin: 1em;
+    border: 2px solid #000033;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 0.5em;
+    border: 1px solid #000033;
+}
+
+@supports (display: grid) {
+
+    form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 6em 1fr;
+        grid-gap: 1em;
+        gap: 1em;
+        background-color: #EAEAEA;
+        font-family: Arial, sans-serif;
+        min-width: 20em;
+        width: 60%;
+        padding: 1.5em;
+    }
+
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 10em;
+        margin-left: 0;
+    }
+
+}
+
+#flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.shop {
+    border: 1px solid #AEC3E3;
+    background-color: #FFFFFF;
+    width: 48%; /* Set width so both items fit side-by-side */
+    box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+    .shop img {
+        float: right;
+    }
+
+    .shop form {
+        clear: right;
+    }
